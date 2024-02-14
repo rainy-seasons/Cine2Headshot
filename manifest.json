@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Cine2Headshot",
+  "version": "1.0",
+  "description": "Displays a headshot of an actor when clicked on Cine2Nerdle",
+  "permissions": [
+	  "activeTab",
+	  "tabs"
+  ],
+  "background": {
+	  "scripts": ["background.js"],
+	  "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
+

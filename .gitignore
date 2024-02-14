@@ -1,0 +1,5 @@
+*.un~
+APIKEY
+BEARER_TOKEN
+*.png
+*.jpg
